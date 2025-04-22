@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tree Services in Lakewood, CO | Dynamic Roots LLC</title>
+  <meta name="description" content="Professional tree removal, pruning, storm cleanup, and tree health assessments in Lakewood, Colorado. Trusted by homeowners and businesses.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="/">Dynamic Roots LLC</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Tree Services in Lakewood, CO</h1>
+    <p class="lead">Your trusted local experts for tree trimming, removal, storm cleanup, and more in Lakewood, Colorado.</p>
+    <a href="contact.html" class="button">Get a Free Estimate</a>
+  </div>
+</section>
+
+<section class="services-overview">
+  <div class="container">
+    <h2>Lakewood Tree Care You Can Count On</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Tree Removal in Lakewood</h3>
+        <p>We safely remove trees that are dead, hazardous, or in the way of your project.</p>
+      </div>
+      <div class="service-item">
+        <h3>Pruning & Trimming</h3>
+        <p>Improve tree health and aesthetics with precise cuts and seasonal shaping.</p>
+      </div>
+      <div class="service-item">
+        <h3>Emergency Storm Cleanup</h3>
+        <p>Fast response for storm-damaged trees and debris removal in Lakewood neighborhoods.</p>
+      </div>
+      <div class="service-item">
+        <h3>Stump Grinding</h3>
+        <p>Clear your yard of unsightly stumps and prepare for new planting or lawn use.</p>
+      </div>
+    </div>
+    <p>We serve all of Lakewood, including Belmar, Green Mountain, and the Alameda corridor.</p>
+    <a href="contact.html" class="button secondary">Schedule Tree Service in Lakewood</a>
+  </div>
+</section>
+
+<section class="about-us-brief">
+  <div class="container">
+    <h2>Why Lakewood Chooses Dynamic Roots LLC</h2>
+    <p>We’re proud to be part of the Lakewood community. Our team of licensed and insured arborists brings decades of combined experience to every job. Whether you're clearing a lot, planting new trees, or dealing with an emergency storm situation, we’re here to help.</p>
+    <a href="about.html" class="button">Learn More About Us</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Dynamic Roots LLC | Tree Service in Lakewood, CO</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
