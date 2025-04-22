@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dynamic Roots LLC</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #355E3B; color: white; padding: 2rem; text-align: center; }
-    section { padding: 2rem; }
-    footer { background: #333; color: white; text-align: center; padding: 1rem; }
-  </style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Roots LLC - Your Trusted Tree Care in Lakewood, CO</title> <meta name="description" content="Professional and dynamic tree care services in Lakewood, Colorado. We offer pruning, removal, health assessments, and more."> <link rel="stylesheet" href="style.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> </head>
 <body>
-  <header>
-    <h1>Dynamic Roots LLC</h1>
-    <p>Tree Care & Arborist Services</p>
-  </header>
-  <section>
-    <h2>About Us</h2>
-    <p>We’re a professional tree service company offering trimming, removal, and emergency tree work with care and integrity.</p>
-    
-    <h2>Services</h2>
-    <ul>
-      <li>Tree Trimming & Pruning</li>
-      <li>Tree Removal</li>
-      <li>Storm Damage Cleanup</li>
-      <li>Emergency Tree Services</li>
-    </ul>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Dynamic Roots LLC</a> </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="services.html">Services</a></li> <li><a href="about.html">About Us</a></li>   <li><a href="contact.html">Contact Us</a></li> </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2>Contact</h2>
-    <p>Email: dynamic.roots.arborists@gmail.com<br>Phone: (123) 456-7890</p>
-  </section>
-  <footer>
-    <p>&copy; 2025 Dynamic Roots LLC</p>
-  </footer>
+    <section class="hero">
+        <div class="container">
+            <h1>Dynamic Tree Care for a Thriving Landscape</h1> <p class="lead">Providing expert tree services in Lakewood, Colorado, with a dynamic and nature-focused approach.</p> <a href="contact.html" class="button">Get a Free Quote</a> </div>
+    </section>
+
+    <section class="services-overview">
+        <div class="container">
+            <h2>Our Key Services</h2> <div class="services-grid">
+                <div class="service-item">
+                    <img src="images/pruning.jpg" alt="Tree Pruning"> <h3>Pruning & Trimming</h3> <p>Enhancing tree health and aesthetics through expert pruning techniques.</p> <a href="services.html#pruning" class="learn-more">Learn More</a> </div>
+                <div class="service-item">
+                    <img src="images/removal.jpg" alt="Tree Removal"> <h3>Safe Tree Removal</h3> <p>Efficient and safe removal of trees when necessary.</p> <a href="services.html#removal" class="learn-more">Learn More</a> </div>
+                <div class="service-item">
+                    <img src="images/health.jpg" alt="Tree Health Assessment"> <h3>Tree Health Assessments</h3> <p>Diagnosing and treating tree diseases and pest issues.</p> <a href="services.html#health" class="learn-more">Learn More</a> </div>
+                </div>
+            <div class="cta-secondary">
+                <p>Ready to experience dynamic tree care?</p>
+                <a href="services.html" class="button secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-brief">
+        <div class="container">
+            <h2>About Dynamic Roots LLC</h2> <p>Dynamic Roots LLC is a locally owned and operated tree care company serving Lakewood, Colorado. We are passionate about the health and beauty of our local trees...</p> <a href="about.html" class="button">Read More About Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Dynamic Roots LLC | Serving Lakewood, Colorado</p> <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p> </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
