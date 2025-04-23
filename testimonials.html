@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials - Dynamic Roots LLC</title>
+  <meta name="description" content="Read real customer reviews and testimonials for Dynamic Roots LLC, Lakewood’s trusted tree service experts.">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img"/>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="testimonials.html" class="active">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>What Our Customers Are Saying</h1>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonial-item">
+        <p>"The team at Dynamic Roots was incredibly professional and efficient. They removed a huge pine from our backyard and left the place spotless. Highly recommend!"</p>
+        <h4>- Sarah M., Lakewood</h4>
+      </div>
+
+      <div class="testimonial-item">
+        <p>"Super impressed with the pruning work. They really know how to make a tree look healthy and balanced."</p>
+        <h4>- James L., Littleton</h4>
+      </div>
+
+      <div class="testimonial-item">
+        <p>"After a storm, we had major limb damage. Dynamic Roots responded the same day. Life savers!"</p>
+        <h4>- Erica D., Golden</h4>
+      </div>
+
+      <div class="testimonial-item">
+        <p>"Professional, friendly, and fair pricing. They gave great advice on tree health, not just services."</p>
+        <h4>- Tom R., Highlands Ranch</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year-footer"></span> Dynamic Roots LLC | Serving Lakewood, Colorado</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year-footer").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
