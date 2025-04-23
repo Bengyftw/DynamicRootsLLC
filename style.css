@@ -86,8 +86,8 @@ nav ul li a:hover {
 
 .button {
     display: inline-block;
-    background-color: #007bff; /* Customize your button color */
-    color: #fff;
+    background-color: #9ab19a; /* Celadon */
+    color: #2f362f; /* Forest Green */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -95,16 +95,21 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #0056b3; /* Customize your button hover color */
+    background-color: #52584d; /* Sage */
+    color: #efebe9; /* Ivory */
 }
 
 .button.secondary {
-    background-color: #5cb85c; /* Customize your secondary button color */
+    background-color: #efebe9; /* Ivory */
+    color: #2f362f;
+    border: 1px solid #9ab19a;
 }
 
 .button.secondary:hover {
-    background-color: #4cae4c; /* Customize your secondary button hover color */
+    background-color: #9ab19a; /* Celadon */
+    color: #efebe9;
 }
+
 
 .services-overview {
     padding: 40px 0;
