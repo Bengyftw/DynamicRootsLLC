@@ -189,4 +189,7 @@ footer a {
     text-decoration: underline;
 }
 
-/* You can add more specific styles here for different sections and elements */
+.logo img {
+    height: 100px; /* Try 100-120px, adjust as needed */
+    width: auto;
+}
