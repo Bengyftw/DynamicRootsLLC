@@ -206,3 +206,11 @@ footer a {
 }
 
 /* You can add more specific styles for other elements on the services page here */
+
+.service-card img {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
