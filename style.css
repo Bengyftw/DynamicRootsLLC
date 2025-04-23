@@ -189,7 +189,8 @@ footer a {
     text-decoration: underline;
 }
 
-.logo img {
-    height: 200px; /* Try 100-120px, adjust as needed */
-    width: auto;
+.logo-img {
+    height: 200px; /* Or whatever size you want */
+    width: auto; /* Keeps the aspect ratio intact */
 }
+
