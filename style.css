@@ -51,12 +51,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: #52584d; /* Sage */
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Customize your hover color */
+    color: #2f362f; /* Forest Green */
 }
 
 .hero {
