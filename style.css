@@ -60,28 +60,29 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('images/hero-bg.jpg.jpg'); /* Replace with your hero image */
+    position: relative;
+    background-image: url('images/hero-bg.jpg.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #efebe9;
     text-align: center;
     padding: 100px 0;
     margin-bottom: 40px;
 }
 
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 54, 47, 0.5); /* Forest Green overlay */
+    z-index: 0;
+}
+
 .hero .container {
-    max-width: 800px;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif; /* Customize your hero headline font */
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero .lead {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .button {
