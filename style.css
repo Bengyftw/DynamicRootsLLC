@@ -215,16 +215,6 @@ footer a {
     margin: 20px auto;
 }
 
-/* Style the entire service card */
-.service-card {
-    background-color: #fafafa;
-    padding: 30px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
-
 /* Style the heading inside service cards */
 .service-card h2 {
     font-family: 'Playfair Display', serif;
