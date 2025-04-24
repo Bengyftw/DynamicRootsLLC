@@ -1,117 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Roots</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Roots Tree Care</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<header>
-  <div class="container">
-    <div class="logo">
-      <a href="/">
-        <img class="logo-img" src="images/test site logo.png" alt="Dynamic Roots LLC Logo">
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<section class="hero" style="background-image: url(images/hero-bg.jpg.jpg);">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Lakewood & Littleton Tree Services You Can Trust</h1>
-      <p class="lead">Expert tree pruning, removal, and emergency storm cleanup serving Lakewood, Ken Caryl, Littleton, Highlands Ranch, Golden, and Greenwood Village, CO.</p>
-      <a href="contact.html" class="button">Get a Free Quote</a>
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span><i class="fas fa-phone"></i> (555) 123-4567</span>
+      <span><i class="fas fa-map-marker-alt"></i> Lakewood, WA</span>
     </div>
   </div>
-</section>
 
-<section class="services-overview">
-  <div class="container">
-    <h2>Our Tree Services</h2>
-    <div class="services-grid">
-      <!-- Service Card -->
-      <div class="service-item">
-        <img src="images/tree triming 3.jpg" alt="Tree Pruning" />
-        <h3>Pruning & Trimming</h3>
-        <p>Enhancing tree health and appearance across Lakewood and surrounding areas.</p>
-        <a href="services.html#pruning" class="learn-more">Learn More</a>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Dynamic Roots</a>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <div class="service-item">
-        <img src="images/Tree removal 1.jpg" alt="Tree Removal" />
-        <h3>Safe Tree Removal</h3>
-        <p>Removing trees safely and efficiently in Highlands Ranch and nearby communities.</p>
-        <a href="services.html#removal" class="learn-more">Learn More</a>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Professional Tree Care You Can Trust</h1>
+      <p class="lead">Serving Lakewood and surrounding areas with expert pruning, removal, and arborist services.</p>
+      <a href="#contact" class="button">Request a Free Estimate</a>
+    </div>
+  </section>
 
-      <div class="service-item">
-        <img src="images/Tree and Health.jpg" alt="Tree Health" />
-        <h3>Tree Health Assessments</h3>
-        <p>Diagnosing tree issues throughout the Front Range.</p>
-        <a href="services.html#health" class="learn-more">Learn More</a>
-      </div>
-
-      <div class="service-item">
-        <img src="images/planting.jpg" alt="Tree Planting" />
-        <h3>Tree Planting</h3>
-        <p>Helping you choose and plant the right trees for your Colorado property.</p>
-        <a href="services.html#planting" class="learn-more">Learn More</a>
-      </div>
-
-      <div class="service-item">
-        <img src="images/storm-cleanup.jpg" alt="Storm Cleanup" />
-        <h3>Storm Cleanup</h3>
-        <p>Quick cleanup after storms in Littleton and Highlands Ranch.</p>
-        <a href="services.html#storm" class="learn-more">Learn More</a>
-      </div>
-
-      <div class="service-item">
-        <img src="images/stump-grinding.jpg" alt="Stump Grinding" />
-        <h3>Stump Grinding</h3>
-        <p>Clear your space with professional stump grinding.</p>
-        <a href="services.html#stumps" class="learn-more">Learn More</a>
+  <!-- Services Overview -->
+  <section class="services-overview" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fas fa-tree service-icon"></i>
+          <h3>Pruning & Trimming</h3>
+          <p>Improve health, shape, and aesthetics of your trees.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-cut service-icon"></i>
+          <h3>Tree Removal</h3>
+          <p>Safe and efficient removal of hazardous or unwanted trees.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-seedling service-icon"></i>
+          <h3>Planting & Consultation</h3>
+          <p>Expert guidance on tree planting and long-term care.</p>
+        </div>
       </div>
     </div>
-    <div class="cta-secondary">
-      <p>Need a trusted tree expert in your area?</p>
-      <a href="services.html" class="button secondary">View All Services</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-us-brief" id="about">
+    <div class="container">
+      <h2>About Dynamic Roots</h2>
+      <p>We're a family-owned tree care company based in Lakewood, WA. With a certified arborist on staff, we deliver safe, sustainable, and honest service every time.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="about-us-brief">
-  <div class="container">
-    <h2>About Our Colorado Tree Company</h2>
-    <p>Dynamic Roots LLC is a locally owned tree care company serving Lakewood and nearby areas. We specialize in expert pruning, removal, and emergency tree work tailored to Colorado landscapes.</p>
-    <a href="about.html" class="button">Read More About Us</a>
-  </div>
-</section>
+  <!-- Call to Action -->
+  <section class="cta-secondary" id="contact">
+    <div class="container">
+      <p>Ready to improve your landscape? Let us help!</p>
+      <a href="#" class="button">Schedule a Free Estimate</a>
+    </div>
+  </section>
 
-<footer>
-  <div class="container">
-    <p>&copy; <span id="year"></span> Dynamic Roots LLC</p>
-    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dynamic Roots Tree Care. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
 </body>
 </html>
 
