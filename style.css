@@ -75,7 +75,7 @@ nav ul li a:hover {
    ================================ */
 .hero {
     position: relative;
-    background-image: url('images/hero-bg.jpg.jpg');
+    background-image: url('images/hero-bg.jpg.');
     background-size: cover;
     background-position: center;
     color: #efebe9;
