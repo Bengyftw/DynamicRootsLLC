@@ -464,7 +464,7 @@ footer a {
 
 /* Logo size fix */
 .logo img {
-  max-height: 60px;
+  max-height: 300px;
   width: auto;
   display: block;
 }
