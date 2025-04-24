@@ -4,19 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dynamic Roots</title>
-
-  <!-- Link to Google Fonts if you're using them -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
-
-  <!-- Link to your stylesheet -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome CDN already in your CSS, but to be safe: -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-
 <header>
   <div class="container">
     <div class="logo">
@@ -24,21 +17,20 @@
         <img class="logo-img" src="images/test site logo.png" alt="Dynamic Roots LLC Logo">
       </a>
     </div>
-    <nav> <!-- Fixed the extra << symbol -->
-  <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li> <!-- New -->
-      <li><a href="testimonials.html">Testimonials</a></li> <!-- New -->
-  </ul>
-</nav>
-
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" style="background-image: url('images/hero.jpg');">
   <div class="container">
     <div class="hero-content">
       <h1>Lakewood & Littleton Tree Services You Can Trust</h1>
@@ -50,57 +42,51 @@
 
 <section class="services-overview">
   <div class="container">
-    <h2>Tree Services in Lakewood, Highlands Ranch & Beyond</h2>
-
-    <!-- Grid services -->
+    <h2>Our Tree Services</h2>
     <div class="services-grid">
-      <!-- Repeat these cards -->
+      <!-- Service Card -->
       <div class="service-item">
-        <img src="images/tree triming 3.jpg" alt="Tree Pruning in Lakewood CO" />
+        <img src="images/tree triming 3.jpg" alt="Tree Pruning" />
         <h3>Pruning & Trimming</h3>
-        <p>Enhancing tree health and appearance across Lakewood, Littleton, and surrounding areas.</p>
+        <p>Enhancing tree health and appearance across Lakewood and surrounding areas.</p>
         <a href="services.html#pruning" class="learn-more">Learn More</a>
       </div>
 
       <div class="service-item">
-        <img src="images/Tree removal 1.jpg" alt="Tree Removal in Highlands Ranch" />
+        <img src="images/Tree removal 1.jpg" alt="Tree Removal" />
         <h3>Safe Tree Removal</h3>
-        <p>Removing trees safely and efficiently in Highlands Ranch, Ken Caryl, and nearby communities.</p>
+        <p>Removing trees safely and efficiently in Highlands Ranch and nearby communities.</p>
         <a href="services.html#removal" class="learn-more">Learn More</a>
       </div>
 
       <div class="service-item">
-        <img src="images/Tree and Health.jpg" alt="Arborist inspecting a tree for health" />
+        <img src="images/Tree and Health.jpg" alt="Tree Health" />
         <h3>Tree Health Assessments</h3>
-        <p>Diagnosing issues in trees throughout the Front Range including Golden and Greenwood Village.</p>
+        <p>Diagnosing tree issues throughout the Front Range.</p>
         <a href="services.html#health" class="learn-more">Learn More</a>
       </div>
-    </div>
 
-    <!-- Horizontal scroll services -->
-    <div class="services-scroll">
       <div class="service-item">
-        <img src="images/planting.jpg" alt="Tree Planting in Colorado" />
+        <img src="images/planting.jpg" alt="Tree Planting" />
         <h3>Tree Planting</h3>
-        <p>Helping you choose and plant the right trees for your property in Lakewood and beyond.</p>
+        <p>Helping you choose and plant the right trees for your Colorado property.</p>
         <a href="services.html#planting" class="learn-more">Learn More</a>
       </div>
 
       <div class="service-item">
-        <img src="images/storm-cleanup.jpg" alt="Storm Cleanup in Littleton CO" />
+        <img src="images/storm-cleanup.jpg" alt="Storm Cleanup" />
         <h3>Storm Cleanup</h3>
-        <p>Quick and safe cleanup after storms in Littleton, Ken Caryl, and Highlands Ranch.</p>
+        <p>Quick cleanup after storms in Littleton and Highlands Ranch.</p>
         <a href="services.html#storm" class="learn-more">Learn More</a>
       </div>
 
       <div class="service-item">
-        <img src="images/stump-grinding.jpg" alt="Stump Grinding in Highlands Ranch" />
+        <img src="images/stump-grinding.jpg" alt="Stump Grinding" />
         <h3>Stump Grinding</h3>
-        <p>Reclaim your outdoor space with stump removal services across Lakewood and Golden.</p>
+        <p>Clear your space with professional stump grinding.</p>
         <a href="services.html#stumps" class="learn-more">Learn More</a>
       </div>
     </div>
-
     <div class="cta-secondary">
       <p>Need a trusted tree expert in your area?</p>
       <a href="services.html" class="button secondary">View All Services</a>
@@ -111,14 +97,14 @@
 <section class="about-us-brief">
   <div class="container">
     <h2>About Our Colorado Tree Company</h2>
-    <p>Dynamic Roots LLC is a locally owned and operated tree care company serving Lakewood, Ken Caryl, Littleton, Highlands Ranch, Golden, and Greenwood Village, Colorado. We specialize in expert pruning, removal, and emergency tree work tailored to Colorado landscapes.</p>
+    <p>Dynamic Roots LLC is a locally owned tree care company serving Lakewood and nearby areas. We specialize in expert pruning, removal, and emergency tree work tailored to Colorado landscapes.</p>
     <a href="about.html" class="button">Read More About Us</a>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>&copy; <span id="year"></span> Dynamic Roots LLC | Tree Service in Lakewood, Littleton, Highlands Ranch, CO</p>
+    <p>&copy; <span id="year"></span> Dynamic Roots LLC</p>
     <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
   </div>
 </footer>
