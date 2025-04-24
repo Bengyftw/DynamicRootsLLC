@@ -368,12 +368,6 @@ footer a {
    ================================ */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
-.service-img {
-  width: 50%;
-  max-width: 200px;
-  height: auto;
-}
-
 .services-grid-main .service-item img,
 .services-scroll .service-item img {
   width: 100%;
