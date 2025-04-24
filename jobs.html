@@ -12,78 +12,82 @@
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="/"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="jobs.html">Careers</a></li>
-        </ul>
-      </nav>
+<header>
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" />
+      </a>
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="jobs.html" class="active">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <section class="page-header">
-    <div class="container">
-      <h1>Join the Dynamic Roots Team</h1>
-      <p class="lead">We're growing and looking for passionate individuals who care about trees and customer service.</p>
+<section class="page-header">
+  <div class="container">
+    <h1>Join the Dynamic Roots Team</h1>
+    <p class="lead">We're growing and looking for passionate individuals who care about trees and customer service.</p>
+  </div>
+</section>
+
+<section class="job-listings">
+  <div class="container">
+    <h2>Current Openings</h2>
+
+    <div class="job-card">
+      <h3>Certified Arborist</h3>
+      <p>We're seeking a certified arborist to join our professional crew. Experience with pruning, climbing, and diagnosis preferred.</p>
+      <ul>
+        <li>Full-time / Competitive pay</li>
+        <li>Must be ISA certified</li>
+        <li>Valid driver's license required</li>
+      </ul>
+      <a href="mailto:dynamic.roots.arborists@gmail.com?subject=Arborist Job Application" class="button">Apply Now</a>
     </div>
-  </section>
 
-  <section class="job-listings">
-    <div class="container">
-      <h2>Current Openings</h2>
-
-      <div class="job-card">
-        <h3>Certified Arborist</h3>
-        <p>We're seeking a certified arborist to join our professional crew. Experience with pruning, climbing, and diagnosis preferred.</p>
-        <ul>
-          <li>Full-time / Competitive pay</li>
-          <li>Must be ISA certified</li>
-          <li>Valid driver's license required</li>
-        </ul>
-        <a href="mailto:dynamic.roots.arborists@gmail.com?subject=Arborist Job Application" class="button">Apply Now</a>
-      </div>
-
-      <div class="job-card">
-        <h3>Ground Crew Assistant</h3>
-        <p>Great entry-level opportunity for someone interested in tree care. Training provided. Must be dependable and safety-minded.</p>
-        <ul>
-          <li>Full-time / $18–22/hr depending on experience</li>
-          <li>Physically able to lift and haul equipment</li>
-          <li>Outdoor work in all weather</li>
-        </ul>
-        <a href="mailto:dynamic.roots.arborists@gmail.com?subject=Ground Crew Job Application" class="button">Apply Now</a>
-      </div>
-
-      <!-- Add more job cards here -->
+    <div class="job-card">
+      <h3>Ground Crew Assistant</h3>
+      <p>Great entry-level opportunity for someone interested in tree care. Training provided. Must be dependable and safety-minded.</p>
+      <ul>
+        <li>Full-time / $18–22/hr depending on experience</li>
+        <li>Physically able to lift and haul equipment</li>
+        <li>Outdoor work in all weather</li>
+      </ul>
+      <a href="mailto:dynamic.roots.arborists@gmail.com?subject=Ground Crew Job Application" class="button">Apply Now</a>
     </div>
-  </section>
 
-  <section class="cta-secondary">
-    <div class="container">
-      <p>Want to learn more about what it's like to work with us?</p>
-      <a href="about.html" class="button">Meet the Team</a>
-    </div>
-  </section>
+    <!-- Add more job cards here -->
+  </div>
+</section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Dynamic Roots LLC | Tree Services in Colorado</p>
-      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-    </div>
-  </footer>
+<section class="cta-secondary">
+  <div class="container">
+    <p>Want to learn more about what it's like to work with us?</p>
+    <a href="about.html" class="button">Meet the Team</a>
+  </div>
+</section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year-footer"></span> Dynamic Roots LLC | Tree Services in Colorado</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year-footer").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
