@@ -9,6 +9,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    .thank-you-wrapper {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .thank-you-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+    .success-message p {
+      font-size: 1.1rem;
+      margin: 1rem auto 2rem;
+      max-width: 600px;
+    }
+    .button {
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #1b5e20;
+    }
+  </style>
 </head>
 <body>
 
@@ -29,17 +58,12 @@
   </div>
 </header>
 
-<section class="page-header">
-  <div class="container">
-    <h1>Thank You!</h1>
-    <p class="lead">Your application has been submitted. We appreciate your interest in joining the team at Dynamic Roots LLC.</p>
-  </div>
-</section>
-
-<main class="container">
+<main class="container thank-you-wrapper">
+  <img src="images/tree-icon.png" alt="Tree Icon" class="thank-you-icon" />
+  <h1>Thank You for Applying!</h1>
   <div class="success-message">
-    <p>We'll review your application and be in touch if we believe you're a good fit. Thanks again for considering a career with us!</p>
-    <a href="index.html" class="button">Back to Home</a>
+    <p>Your application was successfully submitted. We're excited to learn more about you and will be in touch if there’s a fit. Dynamic Roots is always growing, and we appreciate your interest in being part of our journey.</p>
+    <a href="index.html" class="button">Return to Homepage</a>
   </div>
 </main>
 
