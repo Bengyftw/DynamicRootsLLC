@@ -217,3 +217,26 @@ footer a {
   color: #efebe9;
   text-decoration: underline;
 }
+/* =============================================
+   FORM CONFIRMATION MESSAGE
+============================================= */
+.form-success {
+  background-color: #e6f4ea;
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease-in-out;
+}
+
+.form-success.show {
+  opacity: 1;
+  transform: translateY(0);
+}
