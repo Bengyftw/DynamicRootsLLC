@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You - Dynamic Roots LLC</title>
+  <meta name="description" content="Thank you for applying to Dynamic Roots LLC. We'll be in touch soon.">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="index.html"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="jobs.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Thank You!</h1>
+    <p class="lead">Your application has been submitted. We appreciate your interest in joining the team at Dynamic Roots LLC.</p>
+  </div>
+</section>
+
+<main class="container">
+  <div class="success-message">
+    <p>We'll review your application and be in touch if we believe you're a good fit. Thanks again for considering a career with us!</p>
+    <a href="index.html" class="button">Back to Home</a>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Dynamic Roots LLC | Lakewood, CO</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
