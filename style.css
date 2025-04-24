@@ -131,6 +131,40 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+/* ===================
+   Service Section Styles
+   =================== */
+
+.services-grid-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.services-scroll .service-item {
+  flex: 0 0 auto;
+  min-width: 250px;
+  scroll-snap-align: start;
+}
+
+.service-item {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .service-item {
     text-align: center;
     padding: 20px;
