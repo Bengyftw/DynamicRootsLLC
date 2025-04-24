@@ -332,3 +332,18 @@ footer a {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+.two-column-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 2rem;
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+@media (max-width: 768px) {
+  .two-column-list {
+    columns: 1;
+  }
+}
