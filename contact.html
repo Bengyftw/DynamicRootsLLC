@@ -87,7 +87,7 @@
     </div>
   </footer>
 
-  <script>
+    <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Contact form handling
@@ -113,4 +113,8 @@
           alert("There was a problem submitting your form. Please try again.");
         }
       } catch (error) {
-
+        alert("Something went wrong. Please try again later.");
+        console.error(error);
+      }
+    });
+  </script>
