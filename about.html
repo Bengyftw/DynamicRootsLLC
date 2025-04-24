@@ -12,28 +12,67 @@
 </head>
 <body>
 
-  <header>
-  <div class="container">
+<header>
+  <div class="container header-wrapper">
     <div class="logo">
-      <a href="/"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" /></a>
+      <a href="index.html"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" /></a>
     </div>
-    <!-- REPLACE THIS NAV WITH UPDATED ONE -->
-    <nav>...</nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="jobs.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
-  <section class="page-header">
-    <div class="container">
-      <h1>About Dynamic Roots LLC</h1>
-      <p class="lead">Your trusted tree care professionals serving Lakewood, Littleton, Highlands Ranch, and beyond.</p>
+
+<section class="page-header">
+  <div class="container">
+    <h1>About Dynamic Roots LLC</h1>
+    <p class="lead">Your trusted tree care professionals serving Lakewood, Littleton, Highlands Ranch, and beyond.</p>
+  </div>
+</section>
+
+<section class="about-content">
+  <div class="container about-grid">
+    <div class="about-text">
+      <h2>Our Mission</h2>
+      <p>At Dynamic Roots LLC, our mission is to provide exceptional tree care services that enhance the safety, health, and beauty of your landscape. We are passionate about protecting Colorado’s urban forest and offering expert guidance for residential and commercial properties alike.</p>
+
+      <h2>What Sets Us Apart</h2>
+      <ul>
+        <li><strong>Certified Arborists:</strong> Knowledgeable professionals trained in the science of tree care.</li>
+        <li><strong>Local Expertise:</strong> Deep understanding of Colorado’s unique climate, soil, and native species.</li>
+        <li><strong>Customer-Focused:</strong> Clear communication, transparency, and respect for your time and property.</li>
+        <li><strong>Safety First:</strong> Fully insured, following the highest safety standards on every job site.</li>
+      </ul>
+
+      <h2>Meet the Team</h2>
+      <p>Dynamic Roots is a family-run business led by ISA-certified arborist Josh Taylor. Our team of climbers, ground crew, and consultants is dedicated to offering friendly, reliable service with professional results.</p>
     </div>
-  </section>
 
-  <section class="about-content">
-    <div class="container about-grid">
-      <div class="about-text">
-        <h2>Our Mission</h2>
-        <p>At Dynamic Roots LLC, our mission is to provide exceptional tree care services that enhance the safety, health, and beauty of your landscape. We are passionate about protecting Colorado’s urban forest and offering expert guidance for residential and commercial properties alike.</p>
+    <div class="about-image">
+      <img src="images/about-us-team.jpg" alt="The Dynamic Roots Team at Work" />
+    </div>
+  </div>
+</section>
 
-        <h2>What Sets Us Apart</h2>
-        <ul>
-          <li><strong>Certified Arborists:</strong> Knowledge
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Dynamic Roots LLC | Trusted Tree Experts in Colorado</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
