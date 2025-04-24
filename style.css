@@ -195,6 +195,47 @@ nav a:hover {
   color: #52584d;
 }
 
+/* =============================================
+   JOB LISTINGS PAGE
+============================================= */
+.job-listings h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.job-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.job-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #2f362f;
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  color: #52584d;
+  margin-bottom: 1rem;
+}
+
+.job-card ul {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  color: #333;
+}
+
+.job-card ul li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
+
 .testimonial cite {
   display: block;
   margin-top: 10px;
