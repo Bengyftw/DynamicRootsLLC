@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Dynamic Roots LLC</title>
-  <meta name="description" content="Get in touch with Dynamic Roots LLC. We're here to answer your tree care questions.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Get in touch with Dynamic Roots LLC. We're here to answer your tree care questions." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header>
     <div class="container">
       <div class="logo">
-        <a href="/">
-          <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img">
-        </a>
+        <a href="/"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" /></a>
       </div>
       <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-    </ul>
-</nav>
-
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <section class="page-header">
     <div class="container">
-      <h1>Contact Us</h1>
-      <p>We're here to help with all your tree care needs in Lakewood, CO!</p>
+      <h1>Contact Dynamic Roots LLC</h1>
+      <p class="lead">We're ready to help with your tree care needs in Lakewood, CO and nearby areas.</p>
     </div>
   </section>
 
-  <section class="contact-info">
+  <section class="contact-content">
+    <div class="container contact-grid">
+      <div class="contact-details">
+        <h2>Get in Touch</h2>
+        <p><strong>Email:</strong> <a href="mailto:dynamic.roots.arborists@gmail.com">dynamic.roots.arborists@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:1234567890">(123) 456-7890</a></p>
+        <p><strong>Location:</strong> Lakewood, Colorado</p>
+        <p>We proudly serve Lakewood, Littleton, Highlands Ranch, and the greater Denver Metro area.</p>
+        <img src="images/contact-tree.jpg" alt="Contact Tree Care Team" />
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="mailto:dynamic.roots.arborists@gmail.com" method="POST" enctype="text/plain">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-secondary">
     <div class="container">
-      <p><strong>Email:</strong> dynamic.roots.arborists@gmail.com</p>
-      <p><strong>Phone:</strong> (123) 456-7890</p>
-      <p><strong>Location:</strong> Lakewood, Colorado</p>
+      <p>Looking for a specific service or emergency tree care?</p>
+      <a href="services.html" class="button">Explore Our Services</a>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; <span id="year-footer"></span> Dynamic Roots LLC | Serving Lakewood, Colorado</p>
+      <p>&copy; <span id="year"></span> Dynamic Roots LLC | Tree Services in Colorado</p>
       <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </div>
   </footer>
 
   <script>
-    document.getElementById("year-footer").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
