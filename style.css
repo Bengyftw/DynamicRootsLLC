@@ -196,7 +196,7 @@ footer a {
 }
 
 .logo-img {
-    height: 300px; /* Or whatever size you want */
+    height: 310px; /* Or whatever size you want */
     width: auto; /* Keeps the aspect ratio intact */
 }
 
@@ -464,7 +464,7 @@ footer a {
 
 /* Logo size fix */
 .logo img {
-  max-height: 300px;
+  max-height: 310px;
   width: auto;
   display: block;
 }
