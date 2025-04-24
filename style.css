@@ -288,3 +288,10 @@ footer a {
   transform: translateY(0);
 }
 
+.hero-slider {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  animation: slideShow 15s infinite;
+}
