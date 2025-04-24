@@ -238,8 +238,12 @@ footer a {
 
 .form-success.show {
   opacity: 1;
+  transform: translateY(0);
+}
 
-   /* HERO SLIDER STYLING */
+/* =============================================
+   HERO SLIDER STYLING
+============================================= */
 .hero-slider {
   position: relative;
   height: 90vh;
