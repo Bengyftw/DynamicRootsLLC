@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now - Dynamic Roots LLC</title>
+  <meta name="description" content="Apply for a job at Dynamic Roots LLC. Submit your application to join our tree care team.">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="index.html"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="jobs.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Apply Now</h1>
+    <p class="lead">Fill out the form below to apply for a position at Dynamic Roots LLC.</p>
+  </div>
+</section>
+
+<main class="container">
+  <form action="#" method="post" enctype="multipart/form-data" class="job-form">
+    <label for="full-name">Full Name *</label>
+    <input type="text" id="full-name" name="full-name" required>
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="resume">Upload Resume (PDF/DOC)</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+    <label for="experience">Brief Experience Summary</label>
+    <textarea id="experience" name="experience" rows="5" placeholder="Tell us a little about your tree work or related experience."></textarea>
+
+    <fieldset class="checkbox-group">
+      <legend>Skills & Certifications</legend>
+      <label><input type="checkbox" name="skills" value="Can Climb"> Can Climb</label>
+      <label><input type="checkbox" name="skills" value="ISA Certified"> ISA Certified</label>
+      <label><input type="checkbox" name="skills" value="CDL License"> CDL License</label>
+      <label><input type="checkbox" name="skills" value="First Aid/CPR"> First Aid/CPR</label>
+    </fieldset>
+
+    <button type="submit" class="button">Submit Application</button>
+  </form>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Dynamic Roots LLC | Apply to Join Our Team</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
