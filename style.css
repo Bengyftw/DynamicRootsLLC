@@ -411,10 +411,11 @@ footer a {
 }
 
 .service-card img {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px; /* if you want to keep this from the first version */
 }
 
