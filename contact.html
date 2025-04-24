@@ -9,6 +9,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Inline addition just for this example — add to style.css in production */
+    .form-success {
+      display: none;
+      background-color: #e6f4ea;
+      border: 2px solid #2e7d32;
+      color: #2e7d32;
+      padding: 1.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .form-success.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
 
@@ -66,7 +91,7 @@
           <button type="submit" class="button">Send Message</button>
         </form>
 
-        <div id="formSuccess" class="form-success" style="display: none;">
+        <div id="formSuccess" class="form-success">
           <p>✅ Thank you for reaching out! We'll get back to you shortly.</p>
         </div>
       </div>
@@ -87,10 +112,9 @@
     </div>
   </footer>
 
-     <script>
+  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Contact form handling
     const contactForm = document.getElementById("contactForm");
     const formSuccess = document.getElementById("formSuccess");
 
@@ -120,3 +144,4 @@
   </script>
 </body>
 </html>
+
