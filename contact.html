@@ -108,7 +108,7 @@
 
         if (response.ok) {
           contactForm.style.display = "none";
-          formSuccess.style.display = "block";
+          formSuccess.classList.add("show");
         } else {
           alert("There was a problem submitting your form. Please try again.");
         }
