@@ -49,28 +49,28 @@
       </div>
 
       <div class="contact-form">
-  <h2>Send Us a Message</h2>
-  <form id="contactForm">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required />
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
 
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required />
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
 
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="phone" />
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="phone" />
 
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
 
-    <button type="submit" class="button">Send Message</button>
-  </form>
+          <button type="submit" class="button">Send Message</button>
+        </form>
 
-  <div id="formSuccess" class="form-success" style="display: none;">
-    <p>✅ Thank you for reaching out! We'll get back to you shortly.</p>
-  </div>
-</div>
-
+        <div id="formSuccess" class="form-success" style="display: none;">
+          <p>✅ Thank you for reaching out! We'll get back to you shortly.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="cta-secondary">
@@ -89,7 +89,28 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
-</body>
-</html>
+    // Contact form handling
+    const contactForm = document.getElementById("contactForm");
+    const formSuccess = document.getElementById("formSuccess");
+
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch("https://formspree.io/f/meogqwqo", {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: formData
+        });
+
+        if (response.ok) {
+          contactForm.style.display = "none";
+          formSuccess.style.display = "block";
+        } else {
+          alert("There was a problem submitting your form. Please try again.");
+        }
+      } catch (error) {
+
