@@ -11,64 +11,80 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="/">
-          <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img"/>
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="faq.html" class="active">FAQ</a></li>
-        </ul>
-      </nav>
+
+<header>
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img"/>
+      </a>
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="jobs.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <section class="page-header">
-    <div class="container">
-      <h1>Frequently Asked Questions</h1>
+<section class="page-header">
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+  </div>
+</section>
+
+<section class="faq-content">
+  <div class="container">
+    <div class="faq-item">
+      <h3>Do you offer free estimates?</h3>
+      <p>Yes! We provide free, no-obligation estimates for all tree care services. Just <a href="contact.html">get in touch</a> to schedule.</p>
     </div>
-  </section>
 
-  <section class="faq-content">
-    <div class="container">
-      <div class="faq-item">
-        <h3>Do you offer free estimates?</h3>
-        <p>Yes! We provide free, no-obligation estimates for all tree care services. Just <a href="contact.html">get in touch</a> to schedule.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Are you licensed and insured?</h3>
-        <p>Absolutely. We’re fully licensed and insured to work throughout Colorado, giving you peace of mind on every job.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Can you remove trees near power lines or buildings?</h3>
-        <p>Yes, we specialize in precision removals in tight or hazardous spaces. Our crew is trained in rigging and safety protocols.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Do I need a permit for tree removal?</h3>
-        <p>In some areas of Lakewood or nearby cities, yes. We’ll help you determine if a permit is needed and assist with the paperwork if required.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>What if I have a tree emergency?</h3>
-        <p>Call us right away! We offer emergency tree services for storm damage or hazardous limbs. We’ll prioritize your safety and quick response.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Do you offer stump grinding?</h3>
-        <p>Yes, stump grinding is available as an optional service with tree removals or as a standalone request.</p>
-      </div>
+    <div class="faq-item">
+      <h3>Are you licensed and insured?</h3>
+      <p>Absolutely. We’re fully licensed and insured to work throughout Colorado, giving you peace of mind on every job.</p>
     </div>
-  </section>
 
-  <footer>
-    <div class
+    <div class="faq-item">
+      <h3>Can you remove trees near power lines or buildings?</h3>
+      <p>Yes, we specialize in precision removals in tight or hazardous spaces. Our crew is trained in rigging and safety protocols.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do I need a permit for tree removal?</h3>
+      <p>In some areas of Lakewood or nearby cities, yes. We’ll help you determine if a permit is needed and assist with the paperwork if required.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What if I have a tree emergency?</h3>
+      <p>Call us right away! We offer emergency tree services for storm damage or hazardous limbs. We’ll prioritize your safety and quick response.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you offer stump grinding?</h3>
+      <p>Yes, stump grinding is available as an optional service with tree removals or as a standalone request.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Dynamic Roots LLC | Tree Experts Serving Colorado</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
