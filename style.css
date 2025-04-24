@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 /* ================================
    RESET & BASE STYLES
@@ -66,7 +67,7 @@ nav ul li a {
     text-decoration: none;
     color: #52584d;
     transition: color 0.3s ease;
-    padding: 0.5rem; /* <--- added this line */
+    padding: 0.5rem;
 }
 
 nav ul li a:hover {
@@ -121,7 +122,6 @@ nav ul li a:hover {
     color: #efebe9;
 }
 
-
 /* ================================
    BUTTONS
    ================================ */
@@ -174,143 +174,26 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.services-overview .container {
+/* ================================
+   SERVICE GRID LAYOUT (UNIFIED)
+   ================================ */
+.services-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
-/* Responsive Grid */
 @media (min-width: 768px) {
-    .services-overview .container {
+    .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    .services-overview .container {
+    .services-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-/* ================================
-   SERVICE CARD
-   ================================ */
-.service-card {
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.2s;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
-.service-card h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #2f362f;
-}
-
-.service-card h2 i {
-    margin-right: 10px;
-    color: #2f362f;
-}
-
-.service-card p,
-.service-card ul,
-.service-card li {
-    color: #52584d;
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-
-.service-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.service-card li {
-    margin-bottom: 8px;
-}
-
-.service-card .button {
-    margin-top: 15px;
-}
-
-/* Service Image */
-.service-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 20px auto;
-}
-
-/* Animation delay per card */
-.service-card:nth-child(2) { animation-delay: 0.4s; }
-.service-card:nth-child(3) { animation-delay: 0.6s; }
-.service-card:nth-child(4) { animation-delay: 0.8s; }
-.service-card:nth-child(5) { animation-delay: 1s; }
-.service-card:nth-child(6) { animation-delay: 1.2s; }
-
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-@media (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-/* ================================
-   SERVICES GRID (FLEX + SCROLL)
-   ================================ */
-.services-grid-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.services-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 1.5rem;
-    padding: 1rem 0 2rem;
-    scroll-snap-type: x mandatory;
-    max-height: 360px;
-}
-
-.services-scroll .service-item {
-    flex: 0 0 auto;
-    min-width: 260px;
-    scroll-snap-align: start;
-}
-
-
-.services-scroll .service-item {
-    flex: 0 0 auto;
-    min-width: 250px;
-    scroll-snap-align: start;
 }
 
 .service-item {
@@ -319,6 +202,12 @@ nav ul li a:hover {
     border-radius: 0.75rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-item img {
@@ -326,11 +215,19 @@ nav ul li a:hover {
     height: auto;
     border-radius: 0.5rem;
     margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .service-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #2f362f;
+}
+
+.service-item p {
+    font-size: 1.05em;
+    color: #52584d;
+    margin-bottom: 15px;
 }
 
 .service-item .learn-more {
@@ -412,28 +309,5 @@ footer a {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* ================================
-   FONT AWESOME
-   ================================ */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
-
-.services-grid-main .service-item img,
-.services-scroll .service-item img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 0.5rem;
-  object-fit: cover;
-}
-
-.service-card img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 12px; /* if you want to keep this from the first version */
 }
 
