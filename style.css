@@ -373,3 +373,12 @@ footer a {
   max-width: 200px;
   height: auto;
 }
+
+.services-grid-main .service-item img,
+.services-scroll .service-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
