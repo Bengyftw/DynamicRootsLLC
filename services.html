@@ -10,7 +10,7 @@
 <body>
 
 <header>
-  <div class="container">
+  <div class="container header-wrapper">
     <div class="logo">
       <a href="/"><img src="images/test site logo.png" alt="Dynamic Roots LLC Logo"></a>
     </div>
@@ -27,54 +27,88 @@
   </div>
 </header>
 
-<main class="services-page container">
-
-  <h1>Our Tree Services</h1>
-
-  <div class="services-grid"> <!-- ✅ Added grid wrapper -->
-    <div class="service-card">
-      <img src="images/tree triming 3.jpg" alt="Tree Trimming in Lakewood, CO" />
-      <h3>Tree Trimming & Pruning</h3>
-      <p>Improve the health, safety, and appearance of your trees in Lakewood, Littleton, and nearby areas.</p>
-      <a href="contact.html" class="button">Request Trimming Quote</a>
-    </div>
-
-    <div class="service-card">
-      <img src="images/tree removal 2.jpg" alt="Tree Removal in Highlands Ranch" />
-      <h3>Tree Removal</h3>
-      <p>Safe and efficient tree removal services for homes and businesses across Highlands Ranch and Ken Caryl.</p>
-      <a href="contact.html" class="button">Get Tree Removal Help</a>
-    </div>
-
-    <div class="service-card">
-      <img src="images/Tree and Health.jpg" alt="Tree Health Inspection Colorado" />
-      <h3>Tree Health Inspection</h3>
-      <p>Identify disease, decay, or pests early with certified arborist evaluations across the Denver Metro.</p>
-      <a href="contact.html" class="button">Schedule a Health Check</a>
-    </div>
-
-    <div class="service-card">
-      <img src="images/planting.jpg" alt="Tree Planting in Colorado" />
-      <h3>Tree Planting</h3>
-      <p>We'll help you select, plant, and maintain new trees suited for Colorado's climate and soil.</p>
-      <a href="contact.html" class="button">Request a Planting Quote</a>
-    </div>
-
-    <div class="service-card">
-      <img src="images/storm-cleanup.jpg" alt="Storm Damage Tree Cleanup Littleton" />
-      <h3>Storm Cleanup</h3>
-      <p>Fast and reliable storm damage tree cleanup in Littleton, Lakewood, Golden, and surrounding areas.</p>
-      <a href="contact.html" class="button">Get Emergency Cleanup</a>
-    </div>
-
-    <div class="service-card">
-      <img src="images/stump-grinding.jpg" alt="Stump Grinding Lakewood" />
-      <h3>Stump Grinding</h3>
-      <p>Remove unsightly stumps and reclaim your yard with our stump grinding services.</p>
-      <a href="contact.html" class="button">Book Stump Removal</a>
-    </div>
+<section class="hero hero-services">
+  <div class="container">
+    <h1>Comprehensive Tree Services in Colorado</h1>
+    <p class="lead">Proudly serving Lakewood, Littleton, Highlands Ranch, Golden & surrounding areas.</p>
   </div>
+</section>
 
+<main class="container">
+  <section class="services-overview">
+    <h2>What We Offer</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/tree triming 3.jpg" alt="Tree Trimming in Lakewood, CO" />
+        <h3>Tree Trimming & Pruning</h3>
+        <p>Improve the health, safety, and appearance of your trees in Lakewood, Littleton, and nearby areas.</p>
+        <a href="contact.html" class="button">Request Trimming Quote</a>
+      </div>
+
+      <div class="service-card">
+        <img src="images/tree removal 2.jpg" alt="Tree Removal in Highlands Ranch" />
+        <h3>Tree Removal</h3>
+        <p>Safe and efficient tree removal services for homes and businesses across Highlands Ranch and Ken Caryl.</p>
+        <a href="contact.html" class="button">Get Tree Removal Help</a>
+      </div>
+
+      <div class="service-card">
+        <img src="images/Tree and Health.jpg" alt="Tree Health Inspection Colorado" />
+        <h3>Tree Health Inspection</h3>
+        <p>Identify disease, decay, or pests early with certified arborist evaluations across the Denver Metro.</p>
+        <a href="contact.html" class="button">Schedule a Health Check</a>
+      </div>
+
+      <div class="service-card">
+        <img src="images/planting.jpg" alt="Tree Planting in Colorado" />
+        <h3>Tree Planting</h3>
+        <p>We'll help you select, plant, and maintain new trees suited for Colorado's climate and soil.</p>
+        <a href="contact.html" class="button">Request a Planting Quote</a>
+      </div>
+
+      <div class="service-card">
+        <img src="images/storm-cleanup.jpg" alt="Storm Damage Tree Cleanup Littleton" />
+        <h3>Storm Cleanup</h3>
+        <p>Fast and reliable storm damage tree cleanup in Littleton, Lakewood, Golden, and surrounding areas.</p>
+        <a href="contact.html" class="button">Get Emergency Cleanup</a>
+      </div>
+
+      <div class="service-card">
+        <img src="images/stump-grinding.jpg" alt="Stump Grinding Lakewood" />
+        <h3>Stump Grinding</h3>
+        <p>Remove unsightly stumps and reclaim your yard with our stump grinding services.</p>
+        <a href="contact.html" class="button">Book Stump Removal</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="client-logos">
+    <h2>Trusted By</h2>
+    <div class="logo-grid">
+      <img src="images/logo1.png" alt="Client Logo 1">
+      <img src="images/logo2.png" alt="Client Logo 2">
+      <img src="images/logo3.png" alt="Client Logo 3">
+      <img src="images/logo4.png" alt="Client Logo 4">
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <p>"Dynamic Roots did a fantastic job trimming and removing a few dangerous trees in our yard. Highly professional and friendly crew!"</p>
+        <strong>- Megan L., Lakewood</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Super responsive and knowledgeable. They identified disease in our ash tree early and saved it. Highly recommend!"</p>
+        <strong>- Dave P., Highlands Ranch</strong>
+      </div>
+      <div class="testimonial">
+        <p>"After a major storm, they were quick to clean up and grind down stumps. Our yard looks amazing again. Great team!"</p>
+        <strong>- Sarah W., Littleton</strong>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -90,4 +124,5 @@
 
 </body>
 </html>
+
 
