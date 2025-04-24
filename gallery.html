@@ -11,53 +11,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="/">
-          <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" />
-        </a>
-      </div>
-      <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
+
+<header>
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
-    </ul>
-</nav>
+        <li><a href="jobs.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    </div>
-  </header>
+<section class="page-header">
+  <div class="container">
+    <h1>Our Tree Work Gallery</h1>
+    <p>See our team in action and the results we deliver for our clients.</p>
+  </div>
+</section>
 
-  <section class="page-header">
-    <div class="container">
-      <h1>Our Tree Work Gallery</h1>
-      <p>See our team in action and the results we deliver for our clients.</p>
+<section class="gallery">
+  <div class="container">
+    <div class="services-grid">
+      <img src="images/gallery1.jpg" alt="Tree pruning before and after" />
+      <img src="images/gallery2.jpg" alt="Tree removal job site" />
+      <img src="images/gallery3.jpg" alt="Stump grinding in progress" />
+      <img src="images/gallery4.jpg" alt="Clean yard after service" />
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="gallery">
-    <div class="container">
-      <div class="services-grid">
-        <img src="images/gallery1.jpg" alt="Tree pruning before and after" />
-        <img src="images/gallery2.jpg" alt="Tree removal job site" />
-        <img src="images/gallery3.jpg" alt="Stump grinding in progress" />
-        <img src="images/gallery4.jpg" alt="Clean yard after service" />
-      </div>
-    </div>
-  </section>
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year-footer"></span> Dynamic Roots LLC | Serving Lakewood, Colorado</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year-footer"></span> Dynamic Roots LLC | Serving Lakewood, Colorado</p>
-      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-    </div>
-  </footer>
-  <script>
-    document.getElementById("year-footer").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year-footer").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
