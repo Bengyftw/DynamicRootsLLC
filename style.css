@@ -98,7 +98,29 @@ nav ul li a:hover {
 .hero .container {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
 }
+
+.hero h1 {
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #efebe9;
+}
+
 
 /* ================================
    BUTTONS
@@ -255,9 +277,17 @@ nav ul li a:hover {
     display: flex;
     overflow-x: auto;
     gap: 1.5rem;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem;
     scroll-snap-type: x mandatory;
+    max-height: 360px;
 }
+
+.services-scroll .service-item {
+    flex: 0 0 auto;
+    min-width: 260px;
+    scroll-snap-align: start;
+}
+
 
 .services-scroll .service-item {
     flex: 0 0 auto;
@@ -388,8 +418,3 @@ footer a {
   margin: 0 auto 20px;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
