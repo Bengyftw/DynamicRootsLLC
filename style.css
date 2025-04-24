@@ -195,6 +195,13 @@ nav a:hover {
   color: #52584d;
 }
 
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2f362f;
+}
+
 /* =============================================
    JOB LISTINGS PAGE
 ============================================= */
@@ -234,13 +241,6 @@ nav a:hover {
 .job-card ul li {
   list-style-type: disc;
   margin-bottom: 0.5rem;
-}
-
-.testimonial cite {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #2f362f;
 }
 
 /* =============================================
@@ -319,7 +319,6 @@ footer a {
   margin-bottom: 1.5rem;
 }
 
-/* Image Slideshow Animation */
 @keyframes slideShow {
   0%   { background-image: url('images/hero1.jpg'); }
   33%  { background-image: url('images/hero2.jpg'); }
@@ -327,7 +326,6 @@ footer a {
   100% { background-image: url('images/hero1.jpg'); }
 }
 
-/* Optional Fade-In Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -346,4 +344,74 @@ footer a {
   .two-column-list {
     columns: 1;
   }
+}
+
+/* =============================================
+   FAQ ACCORDION + EMERGENCY STYLING
+============================================= */
+.faq-section {
+  background: #fff;
+  padding: 40px 20px;
+  margin-top: 2rem;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #f1f8f5;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #2e7d32;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #dcedc8;
+}
+
+.faq-answer {
+  padding: 1rem;
+  background-color: #fff;
+  display: none;
+  font-size: 0.95rem;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+.faq-question.open + .faq-answer {
+  display: block;
+}
+
+.emergency-banner {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 1rem;
+  border: 1px solid #ffeeba;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.emergency-banner a {
+  color: #856404;
+  text-decoration: underline;
 }
