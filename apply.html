@@ -66,10 +66,6 @@
 
     <button type="submit" class="button">Submit Application</button>
   </form>
-
-  <div id="formSuccess" class="form-success" style="display:none;">
-    <p>✅ Thank you for applying! We'll review your information and get back to you soon.</p>
-  </div>
 </main>
 
 <footer>
@@ -83,7 +79,6 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 
   const form = document.getElementById('jobForm');
-  const successMsg = document.getElementById('formSuccess');
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -99,8 +94,7 @@
       });
 
       if (response.ok) {
-        form.style.display = "none";
-        successMsg.style.display = "block";
+        window.location.href = "thank-you.html";
       } else {
         alert("Something went wrong. Please try again later.");
       }
@@ -113,5 +107,3 @@
 
 </body>
 </html>
-
-
