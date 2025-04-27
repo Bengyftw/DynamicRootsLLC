@@ -474,3 +474,47 @@ footer a {
   color: #856404;
   text-decoration: underline;
 }
+
+/* =============================================
+   SERVICE AREAS SECTION
+============================================= */
+.service-areas {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-areas h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2f362f;
+}
+
+.service-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.service-areas-grid a {
+  display: block;
+  background-color: #f9f9f9;
+  color: #2f362f;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-areas-grid a:hover {
+  background-color: #e6f4ea;
+  transform: translateY(-5px);
+  color: #2e7d32;
+}
+
