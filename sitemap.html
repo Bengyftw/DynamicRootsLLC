@@ -5,50 +5,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sitemap | Dynamic Roots LLC</title>
-  <meta name="description" content="Sitemap for Dynamic Roots LLC, linking to all service and local tree care pages.">
+  <meta name="description" content="Explore the complete sitemap of Dynamic Roots LLC, offering tree care services throughout the Denver Metro area.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="logo"><a href="/">Dynamic Roots LLC</a></div>
+    <div class="container header-wrapper">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/test site logo.png" alt="Dynamic Roots LLC Logo" class="logo-img" />
+        </a>
+      </div>
       <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-    </ul>
-</nav>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="jobs.html">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main class="container">
     <h1>Sitemap</h1>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/about.html">About Us</a></li>
-      <li><a href="/contact.html">Contact Us</a></li>
-      <li><a href="/tree-service-lakewood.html">Tree Service in Lakewood</a></li>
-      <li><a href="/tree-service-ken-caryl.html">Tree Service in Ken Caryl</a></li>
-      <li><a href="/tree-service-littleton.html">Tree Service in Littleton</a></li>
-      <li><a href="/tree-service-highlands-ranch.html">Tree Service in Highlands Ranch</a></li>
-      <li><a href="/tree-service-golden.html">Tree Service in Golden</a></li>
-      <li><a href="/tree-service-greenwood-village.html">Tree Service in Greenwood Village</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="jobs.html">Careers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <!-- Location Pages -->
+      <li><a href="tree-service-lakewood.html">Tree Service in Lakewood</a></li>
+      <li><a href="tree-service-ken-caryl.html">Tree Service in Ken Caryl</a></li>
+      <li><a href="tree-service-littleton.html">Tree Service in Littleton</a></li>
+      <li><a href="tree-service-highlands-ranch.html">Tree Service in Highlands Ranch</a></li>
+      <li><a href="tree-service-golden.html">Tree Service in Golden</a></li>
+      <li><a href="tree-service-greenwood-village.html">Tree Service in Greenwood Village</a></li>
     </ul>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; <span id="year"></span> Dynamic Roots LLC</p>
+      <p>&copy; <span id="year-footer"></span> Dynamic Roots LLC | Tree Services in Colorado</p>
     </div>
   </footer>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year-footer").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
